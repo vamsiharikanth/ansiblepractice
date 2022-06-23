@@ -1,0 +1,29 @@
+vpc_name: "Vprofile-vpc"
+#vpc Range
+vpcCidr: '172.20.0.0/16'
+
+#subnets Range
+PubSub1Cidr: 172.20.1.0/24
+PubSub2Cidr: 172.20.2.0/24
+PubSub3Cidr: 172.20.3.0/24
+PrivSub1Cidr: 172.20.4.0/24
+PrivSub2Cidr: 172.20.5.0/24
+PrivSub3Cidr: 172.20.6.0/24
+
+#region name
+region: "ap-south-1"
+
+#zone names
+zone1: ap-south-1a
+zone2: ap-south-1b
+zone3: ap-south-1c
+
+state: present
+#variable file for vpc-setup
+
+#variables for bastion
+#bastion_setup_vars
+bastion_ami: ami-08df646e18b182346
+#try to use rock solid hardend ami for security as bastion host is the single point entry to our vpc  from public network
+#cis redhatentrprise is most popular
+MYIP: 59.96.219.9/32   #myip/32
